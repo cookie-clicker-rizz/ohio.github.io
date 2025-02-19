@@ -12,12 +12,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <script>
-        const password = "SkibidiOhio";
+        const password = "U2tpYmlkaU9oaW8=";
+        const deEncoded = atob(password);
         const url = "https://www.classroom.google.com/"
 
         var attempt = prompt("Welcome to our site! Please enter the password to continue:");
 
-        if (attempt != password) {
+        if (attempt != deEncoded) {
             alert("Correct! You may now proceed to our site!");
             window.location.replace(url);
         } else {
